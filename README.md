@@ -6,7 +6,7 @@ This cookbook is aimed at making it easy to provide secure SSL/TLS settings in y
 
 This repository provides a centralised easy way to encapsulate recommended SSL settings, across multiple sites. It may not always be up to date with the latest best practices as new protocols are published, and vulnerabilities in existing ones are discovered. Use of this cookbook does not constitute a magical security bullet, and the author(s) expressly makes no guarantee that use of this cookbook will necessarily result in correct security settings for your server. You should use this as a starting point, and check the generated results for yourself.
 
-It is recommended that you read [Mozilla's TLS Guidelines](https://wiki.mozilla.org/Security/Server_Side_TLS) as a more definitive guide, and more frequently updated source of information. It is also recommended that you test the strength of your server's configuration together with the generated key and certificate via a tool such as [SSL Labs server test](https://www.ssllabs.com/ssltest/analyze.html) to get a better picture of the security of your specific site.
+It is recommended that you read [Mozilla's TLS Guidelines](https://wiki.mozilla.org/Security/Server_Side_TLS) as a more definitive guide, and more frequently updated source of information. It is also recommended that you test the strength of your server's configuration together with the generated key and certificate via a tool such as [SSL Labs server test](https://www.ssllabs.com/ssltest/) to get a better picture of the security of your specific site.
 
 ## Usage
 
