@@ -1,0 +1,17 @@
+<%= ssl_config_banner %>
+
+SSLEngine on
+
+SSLProtocol             <%= ssl_protocols('apache') %>
+SSLCipherSuite          <%= ssl_ciphers %>
+SSLHonorCipherOrder     on
+SSLCompression          off
+
+<%= %Q(# OCSP Stapling, only in httpd 2.3.3 and later
+SSLUseStapling          on
+SSLStaplingResponderTimeout 5
+SSLStaplingReturnResponderErrors off
+SSLStaplingCache        shmcb:/var/run/ocsp(128000)) if apache_ssl_stapling? %>
+
+# Enable this if your want HSTS (recommended, but be careful)
+<%= %Q(Header add Strict-Transport-Security "max-age=#{@hsts}") if (@hsts = hsts_time) %>
