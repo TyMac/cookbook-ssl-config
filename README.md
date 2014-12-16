@@ -94,7 +94,7 @@ server {
   <tr>
     <td><tt>['ssl-config']['tuning']['ssl_session_cache']</tt></td>
     <td>String</td>
-    <td>Tunable session timeout</td>
+    <td>Tunable session cache</td>
     <td><tt>"shared:SSL:5m"</tt></td>
   </tr>
 </table>
